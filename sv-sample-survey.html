@@ -1,0 +1,21 @@
+<head><script src="https://help.seamless.ai/lightning/lightning.out.js"></script> 
+<!-- URL of Lightning JavaScript of your Salesforce site. update by replacing "https://sdemo1.my.site.com/SD1C/" with your community base URL -->
+
+<script>
+     $Lightning.use("ArdiraSurvey:EmbeddedSurvey",
+     function() {
+         $Lightning.createComponent(
+             "ArdiraSurvey:surveyResponder",
+             {
+                 recordId:'a5E6R0000006KDBUA2', // recordId
+                 externalIntegration:true,
+                 logicalId:'97748f63-a5c4-2012-c9f9-53d018adbdea', // logicalId
+                        isPhone: true,
+                        isCalledFromStandaloneApp: true,
+                 customFormFactor: "Small"
+             }, "ArdiraSurvey_SurveyResponder",
+             function(cmp) {}
+         );
+     }, 'https://help.seamless.ai'); //Your Salesforce site URL with which Survey is linked.
+</script>
+</head>
